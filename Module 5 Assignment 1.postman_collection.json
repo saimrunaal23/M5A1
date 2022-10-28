@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "4a55d93a-3d62-4b6c-998c-d5f5f15e3072",
+		"name": "Module 5 Assignment 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "tasks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNjaGF0bGFwQGFzdS5lZHUiLCJmdWxsTmFtZSI6IlNhaSBNcnVuYWFsIiwiX2lkIjoiNjM1OWI4MWJjNmYxMDlmNTQyM2IzYjVjIiwiaWF0IjoxNjY2ODI0MjQyfQ.m66Q2_TZWzO4TWA2Q_vaGlUkwafd2Uud95dKYEbdFQ0",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "schatlap@asu.edu",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "fullName",
+							"value": "Sai Mrunaal",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "schatlapp@asu.edu",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "fullName",
+							"value": "Sai Mrunaal",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign_in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "schatlapp@asu.edu",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/auth/sign_in",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"sign_in"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
